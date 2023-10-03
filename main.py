@@ -57,7 +57,8 @@ file_datetime = file_datetime + '.csv'
 file_flag = 1
 
 driver.get(URL)
-# last_page_number = int(re.sub(r'[^0-9]', '', driver.find_element_by_class_name('current_next').get_attribute('href')))
+# last_page_number 
+# = int(re.sub(r'[^0-9]', '', driver.find_element_by_class_name('current_next').get_attribute('href')))
 last_page_element = driver.find_element(By.CLASS_NAME, 'current_next')
 last_page_href = last_page_element.get_attribute('href')
 last_page_number = int(re.sub(r'[^0-9]', '', last_page_href))
