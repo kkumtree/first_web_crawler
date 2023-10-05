@@ -1,5 +1,12 @@
 # My First Web Crawler
 
+## Change Log
+
+- 2023.10.  
+  - Python: ^3.11.5  
+  - Dependency: Windows -> Linux/Unix(Ubuntu, MacOS)  
+  - Modify cause of Website Changing 
+
 ## Purpose
 
 - 의사결정을 위한 리스트업 대응
@@ -9,7 +16,8 @@
 
 ### env
 
-- Windows OS / python ^3.0.0
+- ~~Windows OS~~ Linux | Mac
+- python ^3.11.5
 
 ### library
 
@@ -17,7 +25,8 @@
 
 ### daemon
 
-- chromedriver
+- ~~chromedriver~~
+- Selenium doesn't need chromedriver daemon as default, anymore.  
 
 ```shell
 pip install requests
@@ -28,7 +37,8 @@ pip install pandas
 
 ## Performence
 
-- 매우 낮은 성능, I/O를 매 행마다 하다보니 csv로 했음에도 3000행에 대해 20여분 소요
+- ~~매우 낮은 성능, I/O를 매 행마다 하다보니 csv로 했음에도 3000행에 대해 20여분 소요~~  
+  > 업데이트 이후, 속도가 빨라짐  
 
 ## Think about...
 
