@@ -14,6 +14,51 @@
 
 ## Dependency
 
+### Quick guide 
+
+1. Prerequisite APT repos (Ubuntu/Debian)
+
+```bash
+# Prerequisite
+sudo apt-get install build-essential
+sudo apt install -y \
+    libedit-dev zlib1g zlib1g-dev libssl-dev libbz2-dev libsqlite3-dev
+```
+
+2. pyenv
+
+```bash
+# pyenv auto-install
+curl https://pyenv.run | bash
+
+# linking for .bashrc
+cat <<EOF >> ~/.bashrc
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+EOF
+
+# Show installable versions
+pyenv install -l | grep 3.11
+pyenv install 3.11.6
+pyenv global 3.11.6
+```
+
+3. venv
+
+```bash
+# git clone --depth=1 https://github.com/kkumtree/first_web_crawler.git && cd first_web_crawler/
+python -m venv .venv
+pip install requests bs4 selenium pandas
+```
+
+4. execute
+
+```bash
+python main.py
+# deactivate
+```
+
 ### env
 
 - ~~Windows OS~~ Linux | Mac
